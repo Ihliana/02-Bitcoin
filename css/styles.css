@@ -1,0 +1,501 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #4D4D4D;
+}
+
+#index main,
+#blockchain main,
+#altcoins main {
+  text-align: center;
+  color: #fff;
+}
+
+#index main h1,
+#index main h3,
+#blockchain main h1,
+#blockchain main h3,
+#altcoins main h1,
+#altcoins main h3 {
+  letter-spacing: 2px;
+}
+
+#index main h1,
+#blockchain main h1,
+#altcoins main h1 {
+  text-shadow: 2px 2px 2px #456;
+  margin: 1em 0;
+}
+
+#index main p,
+#blockchain main p,
+#altcoins main p {
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+ul li, ul a,
+ol li,
+ol a {
+  display: inline-block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+}
+
+#index main {
+  background: #F7931A;
+  border-top: 10px solid #be6b07;
+}
+
+#index .current-page {
+  color: #F7931A;
+}
+
+#index a else {
+  color: #fab664;
+}
+
+#index a:hover,
+#index a:focus {
+  color: #fab664;
+}
+
+#index footer {
+  background: #be6b07;
+}
+
+#contact main {
+  background: #C65656;
+  border-top: 10px solid #9b3434;
+}
+
+#contact .current-page {
+  color: #C65656;
+}
+
+#contact a else {
+  color: #d98f8f;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #d98f8f;
+}
+
+#contact footer {
+  background: #9b3434;
+}
+
+#blockchain main {
+  background: #2398c3;
+  border-top: 10px solid #176582;
+}
+
+#blockchain .current-page {
+  color: #2398c3;
+}
+
+#blockchain a else {
+  color: #52bae0;
+}
+
+#blockchain a:hover,
+#blockchain a:focus {
+  color: #52bae0;
+}
+
+#blockchain footer {
+  background: #176582;
+}
+
+#altcoins main {
+  background: #846486;
+  border-top: 10px solid #59435a;
+}
+
+#altcoins .current-page {
+  color: #846486;
+}
+
+#altcoins a {
+  color: #3c2e3d;
+}
+
+#altcoins a else {
+  color: #a88daa;
+}
+
+#altcoins a:hover,
+#altcoins a:focus {
+  color: #a88daa;
+}
+
+#altcoins footer {
+  background: #59435a;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  color: #fff;
+}
+
+ul {
+  display: flex;
+}
+
+.social {
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  color: #989898;
+  background: #eeefed;
+  border-radius: 0.35714285714285em;
+  margin-right: 0.5em;
+}
+
+.social .fab {
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  footer .container ul,
+  footer .container p {
+    margin: 1em auto;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  footer .container {
+    height: 8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    text-align: center;
+  }
+  #index header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #index header .container img {
+    max-width: 180px;
+    display: inline-block;
+    margin: 1em auto;
+  }
+  #index header .container nav {
+    margin: 0 auto;
+  }
+  #index header .container ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1000px) {
+  #index header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #index header .container img {
+    max-width: 9em;
+    max-height: 3em;
+    display: block;
+    margin: 1.5em auto;
+  }
+  #index header .container ul {
+    justify-content: space-around;
+  }
+  #index header .container ul a {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  #index header .container ul li:last-child a {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #blockchain header .container ul,
+  #altcoins header .container ul,
+  #contact header .container ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  #blockchain header .container ul a,
+  #altcoins header .container ul a,
+  #contact header .container ul a {
+    display: inline-block;
+    line-height: 100px;
+    margin-right: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  #index header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #index header .container img {
+    max-width: 10em;
+    max-height: 3em;
+    display: block;
+    margin: auto 0;
+  }
+  #index header .container a {
+    display: inline-block;
+    line-height: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  #index header .container li:last-child a {
+    margin-right: 0;
+  }
+}
+
+pre-footer {
+  text-align: center;
+}
+
+.btn {
+  max-width: 66%;
+  margin: 0 auto;
+  background-color: #F7931A;
+  color: #fff;
+  border: none;
+  padding: .5em .9em;
+  border-radius: .5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 799px) {
+  #index .columns {
+    flex-direction: column;
+  }
+  #index pre-footer .individuals,
+  #index pre-footer .business,
+  #index pre-footer .developers {
+    padding-bottom: 2em;
+  }
+  #index pre-footer .individuals,
+  #index pre-footer .business {
+    border-bottom: 1px solid #eee;
+  }
+  #index pre-footer img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #index main {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  #index main .columns .col {
+    padding: 1em .5em;
+  }
+  #index pre-footer .columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #index pre-footer .columns .col {
+    flex-basis: 30%;
+    min-height: 18em;
+    border-radius: .6em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #index pre-footer .columns img {
+    max-width: 3em;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+#blockchain main {
+  height: 80%;
+}
+
+#blockchain main h1 {
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  #blockchain main .columns {
+    flex-direction: column;
+  }
+  #blockchain main .columns .col:last-child {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #blockchain main .col {
+    padding: 1em;
+  }
+}
+
+#contact main {
+  color: #fff;
+  text-align: center;
+}
+
+#contact .contact-form {
+  max-width: 560px;
+  margin: 4em auto 0;
+  text-align: left;
+}
+
+#contact .contact-form img {
+  max-width: 70%;
+  display: block;
+  margin: 1em auto;
+}
+
+#contact .contact-form label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  padding: .9em;
+  margin-top: .8em;
+  border-radius: .4em;
+  box-shadow: -3px 3px 5px #333;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+#contact .contact-form input {
+  width: 95%;
+  max-width: 95%;
+  display: block;
+}
+
+#contact .contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+#contact .contact-form .contact-btn {
+  margin: 2em 0;
+  padding: 1em 2em;
+  font-weight: bold;
+  border-radius: .5em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 799px) {
+  #altcoins main .columns {
+    display: flex;
+    flex-direction: column;
+  }
+  #altcoins main .columns img {
+    max-width: 25%;
+    border-radius: 50%;
+  }
+  #altcoins main .columns .left {
+    width: 60%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #altcoins main {
+    font-size: 1.2rem;
+  }
+  #altcoins main .columns {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  #altcoins main .columns img {
+    max-width: 25%;
+    border-radius: 50%;
+  }
+  #altcoins main .columns .left {
+    width: 60%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #altcoins main .columns:nth-child(1) .left img,
+  #altcoins main .columns:nth-child(3) .left img {
+    order: 2;
+  }
+}

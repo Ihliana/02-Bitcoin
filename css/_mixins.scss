@@ -1,0 +1,46 @@
+// mixin for main only index, blockchain
+
+@mixin central {
+      #index &,
+      #blockchain &,
+      #altcoins & {
+        text-align: center;
+        color: #fff;
+
+        h1,
+        h3 {
+          letter-spacing: 2px;
+        }
+
+        h1 {
+          text-shadow: 2px 2px 2px #456;
+          margin: 1em 0;
+        }
+
+        p {
+          line-height: 1.5em;
+          letter-spacing: 2px;
+        }
+      }
+
+}
+
+
+
+
+
+// mixin for buttons on index
+@mixin ask {
+  max-width: 66%;
+  margin: 0 auto;
+  background-color: $secondary-color;
+  color: #fff;
+  border: none;
+  padding: .5em .9em;
+  border-radius: .5em;
+
+
+  font: {
+    weight: bold;
+  }
+}

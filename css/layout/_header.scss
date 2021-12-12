@@ -1,0 +1,129 @@
+@media screen and (max-width: 450px){
+  body {
+    text-align: center;
+  }
+
+  #index {
+     header .container {
+       display: flex;
+       flex-direction: column;
+
+       img {
+         max-width: 180px;
+         display: inline-block;
+         margin: 1em auto;
+       }
+
+       nav {
+         margin: 0 auto;
+       }
+
+       ul {
+         display: flex;
+         flex-direction: column;
+       }
+     }
+  }
+}
+
+
+@media screen and (min-width: 451px) and (max-width: 1000px){
+
+  #index {
+     header .container {
+         display: flex;
+         flex-direction: column;
+
+
+         img {
+           max-width: 9em;
+           max-height: 3em;
+           display: block;
+           margin: 1.5em auto;
+         }
+
+         ul {
+           justify-content: space-around;
+
+           a {
+             display: inline-block;
+             line-height: 70px;
+
+             font: {
+               size: 1.3rem;
+               weight: bold;
+             }
+             margin-right: 1em;
+           }
+
+           li:last-child a {
+             margin-right: 0;
+           }
+
+         }
+      }// end of #index's container
+    }// end of #index
+
+}// end of @media (min-width: 451px max-width: 1000px)
+
+
+@media screen and (min-width: 450px) {
+
+  #blockchain,
+  #altcoins,
+  #contact {
+
+      header .container {
+          ul {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+
+                a {
+                    display: inline-block;
+                    line-height: 100px;
+                    margin-right: 1em;
+                      font: {
+                        size: 1.5rem;
+                        weight: bold;
+                      }
+                  }
+          }
+    } // end of #blockchain's header container
+  } // end of #blockchain...
+}
+
+@media screen and (min-width: 1001px) {
+
+  #index {
+     header .container {
+         display: flex;
+          justify-content: space-between;
+
+         img {
+           max-width: 10em;
+           max-height: 3em;
+           display: block;
+           margin: auto 0;
+         }
+
+         a {
+           display: inline-block;
+           line-height: 100px;
+
+            font: {
+              size: 1.5rem;
+              weight: bold;
+            }
+           margin-right: 1em;
+         }
+
+         li:last-child a {
+           margin-right: 0;
+         }
+
+      }// end of #index's container
+    }// end of #index
+
+}

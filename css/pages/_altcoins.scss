@@ -1,0 +1,60 @@
+@media screen and (max-width: 799px) {
+
+    #altcoins {
+      main {
+        .columns {
+          display: flex;
+          flex-direction: column;
+
+
+          img {
+            max-width: 25%;
+            border-radius: 50%;
+
+          }
+
+          .left {
+            width: 60%;
+            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            }
+        }
+      }
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+  #altcoins {
+    main {
+      font-size: 1.2rem;
+
+      .columns {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+  
+        img {
+          max-width: 25%;
+          border-radius: 50%;
+        }
+
+        .left {
+          width: 60%;
+          margin: 1em auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          }
+
+        &:nth-child(1) .left img,
+        &:nth-child(3) .left img{
+            order: 2;
+        }
+      }
+    }
+  }
+}

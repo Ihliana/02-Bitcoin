@@ -1,0 +1,66 @@
+#contact {
+
+  & main {
+    color: #fff;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 560px;
+    margin: 4em auto 0;
+    text-align: left;
+
+    img {
+      max-width: 70%;
+      display: block;
+      margin: 1em auto;
+
+    }
+
+    label {
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 1.4rem;
+    }
+
+    input,
+    textarea {
+      border: 2px solid rgba(0,0,0,.2);
+      background-color: rgba(255,255,255, .1);
+      outline: none;
+
+      padding: .9em;
+      margin-top: .8em;
+
+      border-radius: .4em;
+
+      &:focus {
+        border-color: rgba(#fff,.5);
+      }
+
+      box-shadow: -3px 3px 5px #333;
+
+    }
+
+    input {
+      width: 95%;
+      max-width: 95%;
+      display:block;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+    }
+
+    .contact-btn {
+      margin: 2em 0;
+      padding: 1em 2em;
+      font-weight: bold;
+      border-radius: .5em;
+      text-transform: uppercase;
+    }
+
+  }
+}
